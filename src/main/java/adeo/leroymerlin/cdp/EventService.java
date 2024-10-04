@@ -23,9 +23,9 @@ public class EventService {
     }
 
     /**
-     *
-     * @param query
-     * @return
+     * Return a list of Event containing at least one member matching the query pattern
+     * @param query the matching pattern
+     * @return List of Event
      */
     public List<Event> getFilteredEvents(String query) {
         List<Event> events = eventRepository.findAll();
